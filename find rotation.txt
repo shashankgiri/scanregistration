@@ -1,0 +1,14 @@
+Suppose you want to find a rotation matrix RR that rotates unit vector aa onto unit vector bb.
+
+Proceed as follows:
+
+Let v=a×bv=a×b
+Let s=||v|| (sine of angle)
+
+Let c=a·bc=a·b (cosine of angle)
+
+Then the rotation matrix R is given by:
+R=I+[v]×+[v]2×1-cs2,
+R=I+[v]×+[v]×21-cs2,
+where [v]×[v]× is the skew-symmetric cross-product matrix of vv,
+[v]×=def???0v3-v2-v30v1v2-v10???.

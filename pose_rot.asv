@@ -1,0 +1,11 @@
+
+X_bl=[2.4 -0.01 -2.3,pi 0 pi/2 ];
+eul=[pi/2 0 pi];
+rotm = eul2rotm(eul);
+T=[2.4 -0.01 -2.3  1];
+pose=ssc_tail2tail(M1.SCAN.X_wv,M2.SCAN.X_wv);
+pt=[pose(1,1) pose(2,1) pose(3,1)]';
+TT=rotm*pt;
+pr=[pose(4,1) pose(5,1) pose(6,1)]';
+TR=rotm*pr;
+m=(TT-t).^2
